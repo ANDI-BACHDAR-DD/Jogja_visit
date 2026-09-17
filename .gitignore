@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+venv/
+__pycache__/
+*.pyc
+
+# Database lokal
+*.db
+
+# Environment variables / secrets
+.env
+.env.local
+
+# Tools/IDE
+.kilo/
+.vscode/
+.DS_Store
+
+# Build output
+.next/
+dist/
+build/
