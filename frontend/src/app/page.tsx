@@ -31,7 +31,7 @@ export default function Home() {
         const fetchData = async () => {
             setLoading(true);
             try {
-                const baseUrl = "http://localhost:4000/api";
+                const baseUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000/api";
                 
                 const [resWisata, resRental, resKuliner] = await Promise.all([
                     fetch(`${baseUrl}/wisata?wilayah=${selectedWilayah}`).then(res => res.ok ? res.json() : []),
